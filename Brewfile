@@ -8,6 +8,7 @@ cask 'caffeine'
 cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
 cask 'flux'
+cask 'obs'
 cask 'omnigraffle'
 cask 'rectangle'
 cask 'visual-studio-code'
