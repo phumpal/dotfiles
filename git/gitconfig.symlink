@@ -1,0 +1,15 @@
+[user]
+  name = Patrick Humpal
+  email = "654902+phumpal@users.noreply.github.com "
+[github]
+  user = phumpal
+[core]
+  editor = vim
+[pager]
+  branch = false
+[push]
+  default = current
+[pull]
+  ff = only
+[url "ssh://git@github.com"]
+  insteadOf = https://github.com
