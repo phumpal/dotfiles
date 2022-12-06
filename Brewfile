@@ -16,6 +16,7 @@ cask 'vlc'
 
 brew 'asdf'
 brew 'bat'
+brew 'cmake'
 brew 'cowsay'
 brew 'docker-compose'
 brew 'curl'
