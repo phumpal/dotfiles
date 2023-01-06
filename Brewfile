@@ -15,6 +15,8 @@ cask 'visual-studio-code'
 cask 'vlc'
 
 brew 'asdf'
+brew 'awscli'
+brew 'azure-cli'
 brew 'bat'
 brew 'cmake'
 brew 'cowsay'
