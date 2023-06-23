@@ -1,5 +1,4 @@
 tap 'homebrew/bundle'
-tap 'homebrew/core'
 tap 'bufbuild/buf'
 
 cask '1password-cli'
