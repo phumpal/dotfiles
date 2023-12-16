@@ -7,6 +7,7 @@ cask 'caffeine'
 cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
 cask 'flux'
+cask 'keycastr'
 cask 'maccy'
 cask 'obs'
 cask 'obsidian'
