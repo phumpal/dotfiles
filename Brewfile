@@ -6,6 +6,7 @@ cask 'bluesnooze'
 cask 'caffeine'
 cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
+cask 'google-cloud-sdk'
 cask 'flux'
 cask 'keycastr'
 cask 'maccy'
