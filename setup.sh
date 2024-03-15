@@ -1,10 +1,13 @@
 #!/bin/bash
 
-sudo apt-get install -y stow silversearcher-ag
+DEBIAN_FRONTEND=noninteractive sudo apt-get install -y -qq stow silversearcher-ag
 
 if stow --dir=files --target="$HOME" $(ls files | sed 's#/##' | paste -sd " " -); then
   echo "ok"
 fi
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
+if [ ! -d ~/.vim/plugin/Vundle.vim ]; then
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
+fi
+
 vim +PluginInstall +qall
