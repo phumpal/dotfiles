@@ -7,7 +7,7 @@ if stow --dir=files --target="$HOME" $(ls files | sed 's#/##' | paste -sd " " -)
 fi
 
 if [ ! -d ~/.vim/plugin/Vundle.vim ]; then
-  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/plugin/Vundle.vim
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 vim +PluginInstall +qall
