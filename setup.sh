@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DEBIAN_FRONTEND=noninteractive sudo apt-get install -y -qq stow silversearcher-ag
+sudo apt-get update && sudo apt-get install --only-upgrade golang
 
 if [ -f ~/.gitconfig ]; then
   if [ -L ~/.gitconfig ]; then
