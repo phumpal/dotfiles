@@ -1,3 +1,3 @@
 export INTERLYNK_DISABLE_VERSION_CHECK=true
-export GRYPE_DB_AUTO_UPDATE=false
+export GRYPE_DB_AUTO_UPDATE=true
 export AWS_PAGER=""
