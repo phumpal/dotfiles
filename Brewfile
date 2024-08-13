@@ -7,6 +7,7 @@ cask 'caffeine'
 cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
 cask 'google-cloud-sdk'
+cask 'iterm2'
 cask 'flux'
 cask 'keycastr'
 cask 'maccy'
