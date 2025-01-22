@@ -17,6 +17,7 @@ cask 'maccy'
 cask 'obs'
 cask 'obsidian'
 cask 'rectangle'
+cask 'tableplus'
 cask 'visual-studio-code'
 cask 'vlc'
 
