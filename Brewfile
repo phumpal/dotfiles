@@ -9,6 +9,7 @@ cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
 cask 'elgato-control-center'
 cask 'firefox'
+cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'iterm2'
 cask 'flux'
