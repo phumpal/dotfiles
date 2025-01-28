@@ -24,6 +24,7 @@ cask 'rectangle'
 cask 'tableplus'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'zoom'
 
 brew 'awscli'
 brew 'azure-cli'
