@@ -2,6 +2,7 @@ tap 'homebrew/bundle'
 tap 'bufbuild/buf'
 tap 'neilotoole/sq'
 
+cask '1password@7'
 cask '1password-cli'
 cask 'bluesnooze'
 cask 'caffeine'
