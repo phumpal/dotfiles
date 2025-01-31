@@ -30,6 +30,7 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'zoom'
 
+brew 'ansible'
 brew 'awscli'
 brew 'azure-cli'
 brew 'bat'
