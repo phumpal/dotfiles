@@ -1,7 +1,9 @@
 #!/bin/bash
 
-DEBIAN_FRONTEND=noninteractive sudo apt-get install -y -qq stow silversearcher-ag
-sudo apt-get update && sudo apt-get install --only-upgrade golang
+if [ $(uname) == 'Linux' ]; then
+  DEBIAN_FRONTEND=noninteractive sudo apt-get install -y -qq stow silversearcher-ag
+  sudo apt-get update && sudo apt-get install --only-upgrade golang
+fi
 
 if [ -f ~/.gitconfig ]; then
   if [ -L ~/.gitconfig ]; then
@@ -11,7 +13,7 @@ if [ -f ~/.gitconfig ]; then
   fi
 fi
 
-if stow --dir=files --target="$HOME" $(ls files | sed 's#/##' | paste -sd " " -); then
+if stow --dir=files --override=".vimrc" --target="$HOME" $(ls files | sed 's#/##' | paste -sd " " -); then
   echo "ok"
 fi
 
