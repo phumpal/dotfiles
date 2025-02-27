@@ -28,6 +28,7 @@ cask 'tableplus'
 cask 'telegram'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'whatsapp'
 cask 'zoom'
 
 brew 'ansible'
