@@ -1,17 +1,23 @@
 #!/bin/bash
 
+remove_if_exists() {
+  local file="$1"
+
+  if [ -L "$file" ]; then
+    echo "Unlinking symlink: $file"
+    unlink "$file"
+  elif [ -f "$file" ]; then
+    echo "Skipping regular file: $file (not a symlink)"
+  fi
+}
+
 if [ $(uname) == 'Linux' ]; then
   DEBIAN_FRONTEND=noninteractive sudo apt-get install -y -qq stow silversearcher-ag
   sudo apt-get update && sudo apt-get install --only-upgrade golang
 fi
 
-if [ -f ~/.gitconfig ]; then
-  if [ -L ~/.gitconfig ]; then
-    unlink ~/.gitconfig
-  else
-    rm ~/.gitconfig
-  fi
-fi
+remove_if_exists ~/.gitconfig
+remove_if_exists ~/.gitignore_global
 
 if stow --dir=files --override=".vimrc" --target="$HOME" $(ls files | sed 's#/##' | paste -sd " " -); then
   echo "ok"
