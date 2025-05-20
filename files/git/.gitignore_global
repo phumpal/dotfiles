@@ -32,6 +32,20 @@ tags
 **package
 
 __pycache__
+
+# Ignore Terraform var files with sensitive data
 terraform.tfvars
-.terraform
-*tfstate*
+*.tfvars
+
+# Ignore Terraform state files and backup state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore .terraform path (contains provider plugins, modules, etc)
+.terraform/
+
+# Ignore the lock file - project dependent
+.terraform.lock.hcl
+
+# Ignore Terraform plan output
+*.plan
