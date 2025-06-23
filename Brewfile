@@ -9,6 +9,7 @@ cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
 cask 'elgato-control-center'
 cask 'firefox'
+cask 'granola'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'apple-hewlett-packard-printer-drivers'
