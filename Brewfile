@@ -8,6 +8,7 @@ cask '1password@7'
 cask '1password-cli'
 cask 'bluesnooze'
 cask 'caffeine'
+cask 'claude-code'
 cask 'codeql'
 cask 'docker', args: { appdir: '/Applications' }
 cask 'duckduckgo'
