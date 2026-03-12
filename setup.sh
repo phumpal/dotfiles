@@ -29,3 +29,6 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
 fi
 
 vim +'PluginInstall --sync' +qall &> /dev/null
+
+# Install crontab
+crontab files/cron/crontab
